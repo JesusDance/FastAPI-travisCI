@@ -1,0 +1,28 @@
+https://expenses-fast-api-36b56087a9f1.herokuapp.com
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/users        -> method POST
+
+{
+   "username": "some_name",
+   "password": "some_password"
+}
+
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/users/login  -> method POST
+
+{
+   "username": "some_name",
+   "password": "some_password"
+}
+got bearer token
+
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/expenses    -> method POST
+use bearer token
+{
+   "title": "some_title",
+   "amount": <int>,
+   "description": "some_description" | None
+}
+
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/expenses  		    -> method GET
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/expenses/{id:int}  -> method GET
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/expenses/{id:int}  -> method PATCH
+https://expenses-fast-api-36b56087a9f1.herokuapp.com/expenses/{id:int}  -> method DELETE
